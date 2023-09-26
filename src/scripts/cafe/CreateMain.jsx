@@ -57,40 +57,40 @@ const menuHTML = (
 export default function CreateMain() {
   const main = (
     <main>
-      <div className="main-first-section">
+      <div className="flex flex-col justify-center items-center w-[100%] height-[830px] mb-[60px]">
         {StoryHTML}
 
-        <div className="meal-image-container">
-          <img className="meal-image" src="images/background/hotdogs.jpg"/>
+        <div className="flex items-center justify-center w-[100%] absolute top-[680px]">
+          <img className="meal-image w-[550px] h-[350px] object-cover" src="images/background/hotdogs.jpg"/>
         </div>
 
-        <div className="separation-container">
-          <img className="separation-image" src="images/background/plates-on-table.jpg"/>
+        <div className="mt-[350px] w-[100%]">
+          <img className="h-[200px] w-[100%] object-cover" src="images/background/plates-on-table.jpg"/>
         </div>
 
-        <div className="circules-container">
+        <div className="w-[100%]">
           {circlesHTML}
         </div>
       </div>
 
-      <div className="main-second-section">
+      <div className="flex flex-col items-center w-[100%] h-[1000px] m-[320px]">
 
-        <div className="info-separation-container">
+        <div className="flex items-center flex-center relative bg-black h-[550px] w-[100%] mt-[240px]">
         
         </div>
 
-        <div className="menu-info-container">
-          <div className="view-text-container">
+        <div className="flex flex-col items-center absolute w-[100%]">
+          <div className="text-[1.8rem] font-bold color-black">
             Перегляньте наше меню
           </div>
 
-        <div className="all-menu-container">
+        <div className="flex flex-row justify-center items-center">
           {menuHTML}
         </div>
 
         {locationHTML}
         
-        <div className="third-section-container">
+        <div className="flex flex-col items-center justify-center w-[100%] mb-[100px] mt-[50px]">
           {infoBarHTML} 
         </div>
 
